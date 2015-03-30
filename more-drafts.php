@@ -1,20 +1,30 @@
 <?php
-
-/*
-Plugin Name: More Drafts
-Plugin URI: 
-Description: Adds a Link to the Drafts Page to the Admin Bar, and a Dashboard Widget with more drafts
-Author: Benjamin Birkenhake <benjamin.birkenhake@palasthotel.de>
-Version: 1.0
-Author URI: http://palacehotel.company
-*/
+/**
+ * Plugin Name: More Drafts
+ * Plugin URI: 
+ * Description: Adds a Link to the Drafts Page to the Admin Bar, and a Dashboard Widget with more drafts
+ * Version: 1.0
+ * Author: Benjamin Birkenhake <benjamin.birkenhake@palasthotel.de>
+ * Author URI: http://palacehotel.company
+ * License: GPL2
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * 
+ * __
+ * The devils teeth laughing in the wind.
+ * 
+ */
 
 // Security first
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
+// Add some action 
 add_action( 'admin_bar_menu', 'drafts_admin_bar_menu', 95 );
 add_action( 'wp_dashboard_setup', 'drafts_add_dashboard_widgets' );
 
+
+/**
+ * Add the Button to the Drafts to the Admin Menu.	
+ */
 function drafts_admin_bar_menu() {
   global $wp_admin_bar;
   $wp_admin_bar->add_menu( array( 'id' => 'wp-drafts', 'title' => __( 'Drafts' ), 'href' => get_admin_url('', 'edit.php?post_status=draft'), ) );
@@ -70,12 +80,12 @@ function drafts_extended_dashboard_widget_function($drafts = false) {
 				$item .= '<p>' . $the_content . '</p>';
 			$list[] = $item;
 		}
-?>
-	<ul>
-		<li><?php echo join( "</li>\n<li>", $list ); ?></li>
-	</ul>
-	<p class="textright"><a href="edit.php?post_status=draft" ><?php _e('View all'); ?></a></p>
-<?php
+		$output = "";
+		$output .= "<ul>\n";
+		$output .= "<li>".join( "</li>\n<li>", $list )."</li>\n";
+		$output .= "</ul>\n";
+		$output .= '<p class="textright"><a href="edit.php?post_status=draft" >'.__('View all')."</a></p>\n";
+		print $output;
 	} else {
 		_e('There are no drafts at the moment');
 	}
