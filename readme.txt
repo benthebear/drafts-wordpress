@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: benjamin.birkenhake
-Tags: drafts, wp-admin
-Requires at least: 4.0.0
-Tested up to: 4.3
-Stable tag: 4.3
+Tags: drafts, wp-admin, configurable
+Requires at least: 4.1.1
+Tested up to: 4.1.1
+Stable tag: 4.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ only the Drafts.
 == Installation ==
 
 
-1. Upload the Folder `drafts` to the `/wp-content/plugins/` directory
+1. Upload the Folder `more-drafts` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
 

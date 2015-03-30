@@ -1,12 +1,12 @@
 <?php
 
 /*
-Plugin Name: Drafts
+Plugin Name: More Drafts
 Plugin URI: 
-Description: Adds a Link to the Drafts Page to the Admin Bar, and a Widget
-Author: Benjamin Birkenhake <benjamin@birkenhake.org>
+Description: Adds a Link to the Drafts Page to the Admin Bar, and a Dashboard Widget with more drafts
+Author: Benjamin Birkenhake <benjamin.birkenhake@palasthotel.de>
 Version: 1.0
-Author URI: http://birkenhake.org
+Author URI: http://palacehotel.company
 */
 
 // Security first
