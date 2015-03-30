@@ -5,9 +5,12 @@ Plugin Name: Drafts
 Plugin URI: 
 Description: Adds a Link to the Drafts Page to the Admin Bar, and a Widget
 Author: Benjamin Birkenhake <benjamin@birkenhake.org>
-Version: 0.2
+Version: 1.0
 Author URI: http://birkenhake.org
 */
+
+// Security first
+defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 add_action( 'admin_bar_menu', 'drafts_admin_bar_menu', 95 );
 add_action( 'wp_dashboard_setup', 'drafts_add_dashboard_widgets' );
