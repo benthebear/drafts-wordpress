@@ -30,7 +30,7 @@ function drafts_admin_bar_menu(){
 	$menu = array();
 	$menu['id'] = 'wp-drafts';
 	$menu['title'] = __('Drafts');
-	$menu['href'] => get_admin_url('', 'edit.php?post_status=draft');
+	$menu['href'] = get_admin_url('', 'edit.php?post_status=draft');
 	$wp_admin_bar->add_menu($menu);
 }
 
