@@ -7,8 +7,8 @@ Stable tag: 4.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This Plugin adds a Button to the Admin-Menu that lead directly to the Post-Drafts,
-as well a Dashboard-Widget, that lists a configurable Amount of recent Drafts.
+This Plugin adds a Button to the Admin-Menu that lead directly to the Post Drafts,
+as well a Dashboard Widget, that lists a configurable Amount of recent Drafts.
 
 == Description ==
 
@@ -16,7 +16,8 @@ I found it very hand to have a quick access to all Drafts, so this Plugins first
 to add a Button to the Admin-Menü. This button contains a link to the Post-Admin selecting
 only the Drafts.
 
-
+Also, the Wordpress' own Recent Drafts Dashboard Widget contained to few Drafts for my needs.
+So this Plugin comes with a Dashboard Widget, that shows a configurable Amount of Drafts.
 
 
 == Installation ==
@@ -24,6 +25,8 @@ only the Drafts.
 
 1. Upload the Folder `more-drafts` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+
+or … just install it via Wordpress' Plugin Repository.
 
 
 == Frequently Asked Questions ==
